@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals'
 import Dashboard from './Dashboard'
 import WebVis from './WebsiteVisitors'
@@ -29,7 +28,6 @@ const graph = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <Dashboard dashboard={dashboard} />
     <Stats stats={stats} />
     <WebVis graph = {graph}/>

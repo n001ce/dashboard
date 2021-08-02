@@ -15,7 +15,7 @@ code {
 }
 
 #root{
-  padding: 120px;
+  padding: 200px;
   display: grid;
   grid-template-areas:"sb st st st"
                       "sb gr gr gr";
