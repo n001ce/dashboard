@@ -1,0 +1,86 @@
+body {
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(37, 37, 37);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+  padding: 120px;
+  display: grid;
+  grid-template-areas:"sb st st st"
+                      "sb gr gr gr";
+  grid-gap: 30px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.dashboard{
+  text-align: center;
+  list-style: none;
+  grid-area: sb;
+  height: 100vh;
+  background-color: lightgrey;
+}
+.dashboard ul{
+  text-align: left;
+  list-style: none;
+  margin-top: 400px;
+}
+
+.dashboard li{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stats{
+  grid-area: st;
+  display: grid;
+  grid-template-areas: "reviews avgRate analysis";
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 39vh;
+}
+
+.webVis{
+  grid-area: gr;
+  height: 57.8vh;
+  background-color: lightgrey;
+}
+
+#reviews{
+  background-color: lightgrey;
+}
+
+
+#avgRating{
+  background-color: lightgrey;
+}
+
+#analysis{
+  background-color: lightgrey;
+}
+
+#analysis h1{
+  list-style: none;
+  text-align: center;
+  margin-top: 60px;
+}
+h2, h1, h3, h4{
+  margin-left: 20px;
+}
+
+.graph{
+  height: 40vh;
+  margin: 30px auto auto auto;
+  background-color: darkgrey;
+  width: 70%;
+}
